@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flexi.css">
+    <script src="https://kit.fontawesome.com/a55a9b7e11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="hed">
+            <div id="box2" class="box"><h1><b>JIREH BOUTIQUE</b></h1></div>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" type="button">
+                <span class="menu-icon"></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <nav id="site-nav" class="box nav-menu">
+                <div class="chald"><a href="index.html">HOME</a></div>
+                <div class="chald"><a href="about_us.html">ABOUT-US</a></div>
+                <div class="chald"><a href="products.html">PRODUCTS</a></div>
+                <div class="chald"><a href="contact.html">CONTACT</a></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="fon">
+            <!--different DIVs having contact information, both offline and online medias in stylish manner-->
+            <div><h2>Jireh Boutique is found in Mukono municipal along Jinja road <br>
+                Sombe arcade opposite Muno Municipal hospital room 17.</h2></div>
+            <div class="foni">    
+                <div class="fo_ni">  
+                    <div><h3><i class="fa-solid fa-phone"></i>phone: 0775375328</h3></div>
+                    <div><h3><i class="fa-brands fa-square-whatsapp"></i><img src="../assets/download.png" alt="whatsapp" height="30px">0775375328/0757754559</h3></div>
+                    <div><h3><i class="fa-brands fa-facebook"></i><img src="../assets/urrd.jfif" alt="facebook" height="30px"><i>Jireh Boutique</i></h3></div>
+                    <div><h3><i class="fa-brands fa-twitter"></i><img src="../asssets/twiter.png" alt="twitter" height="30px"><i>Jireh Boutique</i></h3></div>
+                    <div><h3><i class="fa-brands fa-instagram"></i><img src="../assets/instagram-new.jpg" alt="instagram" height="30px"><i>Jireh Boutique</i></h3></div>
+                    <div><h3><i class="fa-solid fa-envelope"></i> email us on wettalaemry1@gmail.com</h3></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="fut"><h3>&copy;Jire Boutigue. All rights reserved. www.jire_boutigue</h3></div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.getElementById('site-nav');
+
+        if (menuToggle && siteNav) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', String(!isOpen));
+                siteNav.classList.toggle('show');
+            });
+        }
+    </script>
+</body>
+</html>

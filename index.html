@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="flexi.css">
+   <script src="https://kit.fontawesome.com/a55a9b7e11.js" crossorigin="anonymous"></script>
+</head>
+<body class="bod">
+    <header>
+        <div class="hed">
+            <div id="box2" class="box"><h1><b>JIREH BOUTIQUE</b></h1></div>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" type="button">
+                <span class="menu-icon"></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <nav id="site-nav" class="box nav-menu">
+                <div class="chald"><a href="index.html">HOME</a></div>
+                <div class="chald"><a href="about_us.html">ABOUT-US</a></div>
+                <div class="chald"><a href="products.html">PRODUCTS</a></div>
+                <div class="chald"><a href="contact.html">CONTACT</a></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="men"> 
+            <div class="grand2">
+                <div class="cont1">
+                    <p>Welcome to Jireh Boutique official website, where you will explore our different atire products <br/>
+                like tops, dresses, skirts, jampsuits, pants, bags, shoes, and many others in different colors, fashions, and brands.</p>
+                    <p>For more details about our products, making orders please <br> <button><a href="products.html">shop now</a></button></p>
+                </div>
+                <div class="im_g">
+                    <div><img src="../assets/present1.jpeg" alt="" height="300px"></div>
+                    <div><img src="../assets/present2.jpeg" alt="" height="290px"></div>
+                </div>
+                <div class="cont2"><h2>DON'T DRESS FOR PURPOSE OF ONLY COVERING YOUR SELF,<br>
+                   BUT DRESS TO ALSO REFLECT THE BEAUTY OF NATURE, PROFFESIONALISM, AND CREATIVITY COMBINED.</h2></div>
+            </div>
+            <div class="grand3">
+                <div id="grandd"><img src="../assets/suit...jpg" alt="suit" height="190px"></div>
+                <div id="grandd"><img src="../assets/jampsuit.jpg" alt="jampsuit" height="210px"></div>
+                <div id="grandd"><img src="../assets/shoes4...jpg" alt="shoees" height="140px"></div>
+                <div id="grandd"><img src="../assets/kid.jpg" alt="kidcloth" height="140px"></div>
+            </div>   
+        </div>
+    </main>
+    <footer>
+        <div><h3>&copy;Jire Boutique. All rights reserved</h3></div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.getElementById('site-nav');
+
+        menuToggle?.addEventListener('click', () => {
+            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!isOpen));
+            siteNav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

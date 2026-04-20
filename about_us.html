@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Jireh Boutique</title>
+    <link rel="stylesheet" href="flexi.css">
+    <script src="https://kit.fontawesome.com/a55a9b7e11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="hed">
+            <div id="box2" class="box"><h1><b>JIREH BOUTIQUE</b></h1></div>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" type="button">
+                <span class="menu-icon"></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <nav id="site-nav" class="box nav-menu">
+                <div class="chald"><a href="index.html">HOME</a></div>
+                <div class="chald"><a href="about_us.html">ABOUT US</a></div>
+                <div class="chald"><a href="products.html">PRODUCTS</a></div>
+                <div class="chald"><a href="contact.html">CONTACT</a></div>
+            </nav>
+        </div>
+    </header>
+    <main class="man">
+        <div class="man">
+            <div class="divi1">
+                <h2>Jireh Boutique is found in Mukono municipal along Jinja road <br>
+                Sombe Arcade opposite Muno Municipal hospital room 17.</h2>
+                <p>you can contact us on 0775375328/0704209195 which are also on whatsapp <br>
+                follow us on instagram <a href="https://www.instagram.com/jireboutique" target="_blank">jire boutique</a> for latest news about our products</p>
+            </div>
+            <div class="divi2">
+                <p><h3>Mission:</h3>To demonstrate creativity, professionalism, and integrity so as to achieve brand loyalty among our customer and also attract new customer</p>
+                <p><h3>Vission:</h3>To be the leading boutique in the region by providing quality textiles and fabrics, and the latest released fashion designs.</p>
+            </div>
+            <div class="divi3">
+                <div class="dog0"><div><img src="../assets/IMG_20251127_104651.jpg" alt="CEO image" height="350px" width="285px"></div>
+                    <div>
+                        <h3>WETTALA EMRY</h3>
+                        <h3>CEO and co-founder Jire Boutique</h3>
+                    </div>
+                </div>
+                <div class="dog">
+                    <div><h3><strong>Mr Wettala is a CEO and Co-founder of three companies;</strong></h3>
+                    <ul>
+                        <li>Tech word which deals in different software development, <br>installation, and maintenance</li>
+                        <li>Hard Sack Ltd which deals all electronics</li>
+                        <li>Jireh Boutique which deals in all body attires</li>
+                    </ul></div>
+                </div>
+                <div class="dog1"><div>He is opportunity and job creator,<br> as he has employed many people <br>from different scopes and skills which <br> match his businesses</div>
+            </div></div>
+            <div class="i_mg">
+                <!--different boutique images in stylish manner-->
+                <div><img src="../assets/arrange.jpeg" alt="" height="210px"></div>
+                <div><img src="../assets/helping.jpg" alt="" height="190px"></div>
+                <div><img src="../assets/search.jpeg" alt="" height="190px"></div>
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>&copy;Jireh Boutique. All rights reserved</h3>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.getElementById('site-nav');
+
+        if (menuToggle && siteNav) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', String(!isOpen));
+                siteNav.classList.toggle('show');
+            });
+        }
+    </script>
+</body>
+</html>
