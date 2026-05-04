@@ -38,9 +38,9 @@ footer h3 { margin: 0; font-size: 1rem; }
 .mono span { font-weight: 700; color: #414141; } 
 .divi1 { margin-left: 40px; background-color: rgba(75, 52, 56, 0.781); font-size: x-large; font-family: serif; color: rgb(199, 193, 193); border-radius: 20px; } 
 .divi2 { margin-left: 40px; background-color: rgba(59, 41, 44, 0.548); font-size: larger; font-family: fantasy; color: rgb(231, 221, 221); border-radius: 20px;} 
-.divi3{ display: flex; margin-left: 80px; gap: 30px; align-items: center; } .dog { align-items: center; background-color: rgba(235, 187, 164, 0.719); height: fit-content; font-size: larger; font-family: monospace; } 
-.dog0 { background-color: rgba(24, 24, 26, 0.712); color: rgb(187, 187, 211); font-family: serif; border-radius: 20px; } 
-.dog1 { align-items: center; background-color: rgba(129, 115, 109, 0.692); height: fit-content; font-size: large; font-family: cursive; border-radius: 20px; } 
+.divi3{ display: flex; margin-left: 80px; gap: 30px; align-items: center; } .dog { align-items: center; background-color: rgba(235, 187, 164, 0.719); height: fit-content; font-size: larger; font-family: monospace; border-radius: 20px; padding: 20px;} 
+.dog0 { background-color: rgba(24, 24, 26, 0.712); color: rgb(187, 187, 211); font-family: serif; border-radius: 20px; padding: 20px; } 
+.dog1 { align-items: center; background-color: rgba(129, 115, 109, 0.692); height: fit-content; font-size: large; font-family: cursive; border-radius: 20px; padding: 20px; } 
 .i_mg{ display: flex; gap: 30px; justify-content: center; } .fon { display: flex; justify-content: start; background-color: rgba(20, 20, 20, 0.795); flex-direction: column; align-items: center; margin: 0px; min-height: 100vh; gap: 50px; } 
 .foni{ display: flex; flex-wrap: wrap; gap: 28px; font-size: x-large; margin: auto; justify-content: center; align-items: flex-start; } 
 .fut{ flex: 1px; justify-content: center; align-items: center; display: flex; color: whitesmoke; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; } 
